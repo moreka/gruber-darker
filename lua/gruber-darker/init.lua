@@ -16,7 +16,7 @@ M.load = function()
   end
   vim.g.colors_name = "gruber-darker"
   vim.o.termguicolors = true
-  vim.o.background = 'dark'
+  vim.o.background = "dark"
 
   local groups = require("gruber-darker.groups").setup()
   for group, settings in pairs(groups) do

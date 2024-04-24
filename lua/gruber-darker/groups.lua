@@ -1,6 +1,7 @@
 local M = {}
 
 M.colors = {
+  fg_m1 = "#a4a4af",
   fg = "#e4e4ef",
   fg_1 = "#f4f4ff",
   fg_2 = "#f5f5f5",
@@ -38,7 +39,7 @@ M.setup = function()
 
     Normal = { bg = colors.bg, fg = colors.fg },
     NormalFloat = { link = "Normal" },
-    NonText = { link = "Normal" },
+    NonText = { fg = colors.fg_m1 },
 
     FloatBorder = { fg = colors.fg },
 
@@ -111,8 +112,9 @@ M.setup = function()
     PmenuSel = { bg = colors.bg_m1 },
     PmenuThumb = { link = "Pmenu" },
 
-    Search = { bg = colors.fg_2, fg = colors.black },
-    IncSearch = { bg = colors.fg_1, fg = colors.niagara_1 },
+    IncSearch = { bg = colors.fg_2, fg = colors.black },
+    Search = { fg = colors.fg_1, bg = colors.niagara_1 },
+    CurSearch = { link = "IncSearch" },
 
     Visual = { bg = colors.bg_3 },
 
@@ -125,10 +127,14 @@ M.setup = function()
     -- TermCursor = { },
     -- TermCursorNC = {},
 
-    DiffText = { link = "Normal" },
+    DiffText = { fg = colors.yellow },
     DiffDelete = { fg = colors.red_1 },
     DiffAdd = { fg = colors.green },
     DiffChange = { fg = colors.yellow },
+
+    GitSignsAdd = { link = "DiffAdd" },
+    GitSignsChange = { link = "DiffChange" },
+    GitSignsDelete = { link = "DiffDelete" },
 
     SpellBad = { fg = colors.red, underline = config.underline },
     SpellCap = { fg = colors.yellow, underline = config.underline },
@@ -176,6 +182,7 @@ M.setup = function()
     texMathCmd = { fg = colors.niagara },
     texMathZone = { fg = colors.green },
     texPartArgTitle = { fg = colors.wisteria, bold = true },
+    texRefArg = { fg = colors.niagara_1 },
 
     -- lsp
     -- DiagnosticVirtualTextInfo = { fg = colors.green_1 },

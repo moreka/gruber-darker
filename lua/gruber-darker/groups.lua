@@ -105,7 +105,7 @@ M.setup = function()
 
     DiagnosticError = { fg = colors.red_1 },
     DiagnosticWarn = { fg = colors.yellow },
-    DiagnosticInfo = { fg = colors.green },
+    DiagnosticInfo = { fg = colors.green_1 },
 
     Pmenu = { bg = colors.bg_1 },
     PmenuSel = { bg = colors.bg_m1 },
@@ -178,7 +178,7 @@ M.setup = function()
     texPartArgTitle = { fg = colors.wisteria, bold = true },
 
     -- lsp
-    DiagnosticVirtualTextInfo = { fg = colors.green_1 },
+    -- DiagnosticVirtualTextInfo = { fg = colors.green_1 },
     DiagnosticUnderlineInfo = { sp = colors.green_1, underline = false, undercurl = true },
 
     -- mini

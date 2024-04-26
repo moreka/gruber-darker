@@ -36,9 +36,9 @@ M.setup = function()
   end
 
   local groups = {
-
+    NormalWOBg = { fg = colors.fg, bg = "none" },
     Normal = { bg = colors.bg, fg = colors.fg },
-    NormalFloat = { link = "Normal" },
+    NormalFloat = { fg = colors.fg, bg = colors.bg_1 },
     NonText = { fg = colors.fg_m1 },
 
     FloatBorder = { fg = colors.fg },
@@ -64,7 +64,7 @@ M.setup = function()
     Character = { fg = colors.green },
 
     Identifier = { fg = colors.fg_1 },
-    Operator = { link = "Normal" },
+    Operator = { link = "NormalWOBg" },
     Title = { fg = colors.niagara },
 
     Constant = { fg = colors.quartz },
@@ -87,7 +87,7 @@ M.setup = function()
     -- Structure = { },
     -- StorageClass = { },
 
-    Special = { link = "Normal" },
+    Special = { link = "NormalWOBg" },
     SpecialChar = { link = "String" },
     SpecialComment = { fg = colors.green },
     Todo = { fg = colors.wisteria },
@@ -182,7 +182,7 @@ M.setup = function()
     texMathCmd = { fg = colors.niagara },
     texMathZone = { fg = colors.green },
     texPartArgTitle = { fg = colors.wisteria, bold = true },
-    texRefArg = { fg = colors.niagara_1 },
+    texRefArg = { fg = colors.fg_m1 },
 
     -- lsp
     -- DiagnosticVirtualTextInfo = { fg = colors.green_1 },

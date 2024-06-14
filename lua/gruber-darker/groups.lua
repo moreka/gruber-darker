@@ -178,7 +178,7 @@ M.setup = function()
     -- TelescopePreviewBorder = { },
 
     -- tex
-    texCmd = { fg = colors.quartz },
+    texCmd = { fg = colors.yellow, bold = true },
     texMathCmd = { fg = colors.niagara },
     texMathZone = { fg = colors.green },
     texPartArgTitle = { fg = colors.wisteria, bold = true },
@@ -189,18 +189,30 @@ M.setup = function()
     DiagnosticUnderlineInfo = { sp = colors.green_1, underline = false, undercurl = true },
 
     -- mini
-    MiniStatuslineModeNormal = { fg = colors.bg, bg = colors.quartz },
-    MiniStatuslineModeInsert = { fg = colors.yellow, bg = colors.bg },
-    MiniStatuslineModeVisual = { fg = colors.wisteria, bg = colors.bg },
-    MiniStatuslineModeReplace = { fg = colors.wisteria, bg = colors.bg },
-    MiniStatuslineModeCommand = { fg = colors.yellow, bg = colors.bg, bold = true },
-    MiniStatuslineModeOther = { fg = colors.bg, bg = colors.quartz },
 
-    MiniStatuslineDevinfo = { fg = colors.fg, bg = colors.bg_1 },
-    -- ["MiniStatusline.section_git"] = { fg = colors.fg, bg = colors.bg_1 },
-    -- ["MiniStatusline.section_diagnostics"] = { fg = colors.fg, bg = colors.bg_1 },
-    MiniStatuslineFilename = { fg = colors.quartz, bg = colors.bg_1 },
-    MiniStatuslineFileinfo = { fg = colors.bg, bg = colors.quartz },
+    MiniStatuslineInactive = { fg = colors.quartz, bg = colors.bg_1, bold = true },
+    MiniStatuslineDevinfo = { fg = colors.quartz, bg = colors.bg_1 },
+    MiniStatuslineFileinfo = { fg = colors.white, bg = colors.bg_1 },
+    MiniStatuslineFilename = { fg = colors.white, bg = colors.bg_1, bold = true },
+    MiniStatuslineModeCommand = { fg = colors.white, bg = colors.bg_1 },
+    MiniStatuslineModeInsert = { fg = colors.white, bg = colors.bg_1 },
+    MiniStatuslineModeNormal = { fg = colors.white, bg = colors.bg_1 },
+    MiniStatuslineModeOther = { fg = colors.white, bg = colors.bg_1 },
+    MiniStatuslineModeReplace = { fg = colors.white, bg = colors.bg_1 },
+    MiniStatuslineModeVisual = { fg = colors.white, bg = colors.bg_1 },
+
+    -- MiniStatuslineModeNormal = { fg = colors.bg, bg = colors.quartz },
+    -- MiniStatuslineModeInsert = { fg = colors.yellow, bg = colors.bg },
+    -- MiniStatuslineModeVisual = { fg = colors.wisteria, bg = colors.bg },
+    -- MiniStatuslineModeReplace = { fg = colors.wisteria, bg = colors.bg },
+    -- MiniStatuslineModeCommand = { fg = colors.yellow, bg = colors.bg, bold = true },
+    -- MiniStatuslineModeOther = { fg = colors.bg, bg = colors.quartz },
+    --
+    -- MiniStatuslineDevinfo = { fg = colors.fg, bg = colors.bg_1 },
+    -- -- ["MiniStatusline.section_git"] = { fg = colors.fg, bg = colors.bg_1 },
+    -- -- ["MiniStatusline.section_diagnostics"] = { fg = colors.fg, bg = colors.bg_1 },
+    -- MiniStatuslineFilename = { fg = colors.quartz, bg = colors.bg_1 },
+    -- MiniStatuslineFileinfo = { fg = colors.bg, bg = colors.quartz },
   }
   return groups
 end
